@@ -8,6 +8,17 @@ public class Product {
     private double prise;
     private boolean active;
 
+    public Product(Long id, double prise) {
+        this.id = id;
+        this.prise = prise;
+    }
+
+    public Product(String title, double prise, boolean active) {
+        this.title = title;
+        this.prise = prise;
+        this.active = active;
+    }
+
     public Long getId() {
         return id;
     }
