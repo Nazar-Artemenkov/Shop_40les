@@ -8,6 +8,11 @@ public class Product {
     private double prise;
     private boolean active;
 
+    public Product(String title, double prise) {
+        this.title = title;
+        this.prise = prise;
+    }
+
     public Product(Long id, double prise) {
         this.id = id;
         this.prise = prise;
