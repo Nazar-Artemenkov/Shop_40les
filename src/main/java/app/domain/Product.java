@@ -70,7 +70,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("Product: id - %d, title - %s, price - %.2f, active - %s.",
-                id, title, prise, active ? "yes":"no");
+        return String.format("Product: id - %d, title - %s, price - %.2f.",
+                id, title, prise);
     }
 }
