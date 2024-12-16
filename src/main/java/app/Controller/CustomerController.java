@@ -28,6 +28,7 @@ public class CustomerController {
     }
    public void updateActiveCustomer(Long id, String name)throws CustomerUpdateException, CustomerNotFoundException{
         Customer customer = new Customer(id, name);
+        service.updateActiveCustomer(customer);
    }
     public void deleteById(Long id)throws CustomerNotFoundException{
         service.deleteById(id);
